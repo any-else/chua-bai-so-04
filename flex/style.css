@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 600px;
+  height: auto;
+
+  /* cho ra giua */
+  margin: 0 auto;
+}
+/* xong thang head */
+.container-head {
+  height: 200px;
+  width: 100%;
+  background-image: url("https://picsum.photos/600/300");
+}
+.container-head > h3,
+.container-head > p {
+  color: white;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+/* thang main */
+.container-main {
+  display: flex;
+}
+.container-main .main-left,
+.container-main .main-right {
+  width: 300px;
+}
+
+.left-shapes {
+  background-image: url("https://picsum.photos/350/400");
+  height: 350px;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+/* ben trong */
+.left-shapes div
+{
+  position: absolute;
+  bottom: 10px;
+  margin-left: 15px;
+}
+
+
+.left-talk,
+.right-Balloon,
+.right-Angry
+{
+   background-image: url("https://picsum.photos/300/450");
+   height: 100px;
+   width: 100%;
+   color: white;
+   /* position: relative; */
+}
+.right-sign {
+   background-image: url("https://picsum.photos/300/500");
+   height: 250px;
+   width: 100%;
+}
+
+
+.left-talk {
+  position: relative;
+}
+
+.left-talk div {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.right-sign {
+  position: relative;
+}
+
+.right-sign p {
+  position: absolute;
+  top: 20px;
+  color: white;
+  left: 15px;
+}
+.right-sign button {
+  color: black;
+  padding: 10px 30px;
+  width: 200px;
+  background-color: white; 
+  position: absolute;
+  bottom: 15px;
+  border-radius: 5px;
+
+  /* can giua theo kieu position */
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  border: none;
+}
